@@ -1,12 +1,8 @@
 "use strict"
 
-const startButton = document.querySelector("[data-start]");
-const endButton = document.querySelector("[data-stop]");
-
-startButton.addEventListener("click", changeBodyColor);
-endButton.addEventListener("click", stopChangeBodyColor);
-endButton.disabled = true;
-
+const btnStart = document.querySelector('button[data-start]');
+const btnStop = document.querySelector('button[data-stop]');
+btnStop.disabled = true;
 let timerId = null;
 
 function getRandomHexColor() {
